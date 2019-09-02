@@ -24,4 +24,34 @@ public class ItemsServiceImpl implements ItemsService {
     public List<Items> findItemsByQueryVo(Items items) {
         return itemsMapper.findItemsByQueryVo(items);
     }
+
+    @Override
+    public void insertItems(Items items) {
+        itemsMapper.insertSelective(items);
+    }
+
+    @Override
+    public Items findItemsById(Integer itemsId) {
+        return itemsMapper.selectByPrimaryKey(itemsId);
+    }
+
+    @Override
+    public void updateItemsByIdSelective(Items items) {
+        itemsMapper.updateByPrimaryKeySelective(items);
+    }
+
+    @Override
+    public void deleteItemsById(Integer id) {
+        itemsMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public List<Items> findItemsByUserId(Integer id) {
+        return itemsMapper.findItemsByUserId(id);
+    }
+
+    @Override
+    public int countItemsByUserId(Integer id) {
+        return itemsMapper.countItemsByUserId( id);
+    }
 }

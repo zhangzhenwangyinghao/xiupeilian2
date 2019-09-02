@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="carpart" />
+        <module name="xiupeilian2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="carpart" target="1.8" />
+      <module name="xiupeilian2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

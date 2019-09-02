@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="carpart:war">
-    <output-path>$PROJECT_DIR$/../carpart/target</output-path>
-    <root id="archive" name="carpart-1.0.war">
-      <element id="artifact" artifact-name="carpart:war exploded" />
-    </root>
-  </artifact>
-</component>

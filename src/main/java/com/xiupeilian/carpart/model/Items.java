@@ -1,5 +1,7 @@
 package com.xiupeilian.carpart.model;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import java.util.Date;
 
 public class Items {
@@ -32,6 +34,16 @@ public class Items {
     private String reservedField2;
 
     private String reservedField3;
+
+    private MultipartFile pic;
+
+    public MultipartFile getPic() {
+        return pic;
+    }
+
+    public void setPic(MultipartFile pic) {
+        this.pic = pic;
+    }
 
     public Integer getId() {
         return id;

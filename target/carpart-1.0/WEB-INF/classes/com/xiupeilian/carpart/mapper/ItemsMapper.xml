@@ -231,4 +231,10 @@
         </where>
         order by update_time desc
     </select>
+    <select id="findItemsByUserId" parameterType="int" resultMap="BaseResultMap">
+    select * from items where user_id = #{userId} and delete_status = 0 order by update_time
+  </select>
+    <select id="countItemsByUserId" parameterType="int" resultType="int">
+    SELECT COUNT(*) FROM items WHERE user_id = #{userId} AND delete_status = 0
+  </select>
 </mapper>
