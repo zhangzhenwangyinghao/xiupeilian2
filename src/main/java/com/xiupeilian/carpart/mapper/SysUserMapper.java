@@ -21,4 +21,6 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
     List<SysUser> selectStaffList();
 
     List<SysUser> staffListbyName(SysUser so);
+
+    SysUser findUserById(int userId);
 }

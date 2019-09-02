@@ -395,4 +395,7 @@
     select * from company where company_name=#{value}
 
   </select>
+  <select id="findCompanyId" parameterType="int" resultMap="BaseResultMap">
+    select * from company where id=#{id}
+  </select>
 </mapper>

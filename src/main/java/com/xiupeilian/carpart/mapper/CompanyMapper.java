@@ -6,4 +6,6 @@ import com.xiupeilian.carpart.model.Company;
 public interface CompanyMapper extends BaseMapper<Company> {
 
     Company findCompanyByName(String companyname);
+
+    Company findCompanyId(int id);
 }

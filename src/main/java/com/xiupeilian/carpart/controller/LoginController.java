@@ -107,7 +107,9 @@ public class LoginController {
             //获取存入的用户信息
             SysUser user=(SysUser)SecurityUtils.getSubject().getPrincipal();
             //存spring-session
+            int id=user.getId();
             request.getSession().setAttribute("user",user);
+            request.getSession().setAttribute("id",id);
             response.getWriter().write("3");
         }else{
             //验证码错误

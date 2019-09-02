@@ -225,5 +225,8 @@
     <select id="staffListbyName" parameterType="loginVo" resultMap="BaseResultMap">
     select * from sys_user where username=#{username}
   </select>
+    <select id="findUserById" parameterType="int" resultMap="BaseResultMap">
+    select * from sys_user where id=#{id}
+  </select>
 
 </mapper>

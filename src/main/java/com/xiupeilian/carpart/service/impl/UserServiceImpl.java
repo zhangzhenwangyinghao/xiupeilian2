@@ -117,4 +117,9 @@ public class UserServiceImpl implements UserService{
     public Role findRoleByRoleId(Integer roleId) {//查到角色的id号
         return roleMapper.selectByPrimaryKey(roleId);
     }
+
+    @Override
+    public SysUser findUserById(int userId) {
+        return userMapper.findUserById(userId);
+    }
 }
