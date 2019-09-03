@@ -395,7 +395,17 @@
     select * from company where company_name=#{value}
 
   </select>
-  <select id="findCompanyId" parameterType="int" resultMap="BaseResultMap">
+  <select id="findCompanyId" parameterType="Integer" resultMap="BaseResultMap">
     select * from company where id=#{id}
   </select>
+  
+  <update id="uploadCompanyPictureById1" parameterType="CompanyUploadVo">
+    update company set picurl1=#{data}where id=#{id}
+  </update>
+  <update id="uploadCompanyPictureById2" parameterType="CompanyUploadVo">
+update company set picurl2=#{data}where id=#{id}
+  </update>
+  <update id="uploadCompanyPictureById3" parameterType="CompanyUploadVo">
+update company set picurl3=#{data}where id=#{id}
+  </update>
 </mapper>

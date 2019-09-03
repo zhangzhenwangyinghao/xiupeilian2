@@ -29,16 +29,36 @@ public class BrandServiceImpl implements BrandService{
 
     @Override
     public List<Brand> findBrandAll() {
+
         return brandMapper.findBrandAll();
     }
 
     @Override
-    public List<Parts> findPartsAll() {
+    public List<Parts> findPartsAll()
+    {
         return partsMapper.findPartsAll();
     }
 
     @Override
     public List<Prime> findPrimeAll() {
+
         return primeMapper.findPrimeAll();
     }
+
+    @Override
+    public Brand finBrandById(String main) {
+        return brandMapper.selectByPrimaryKey(Integer.valueOf(main));
+    }
+
+    @Override
+    public Parts findPartsByID(String singleParts) {
+        return partsMapper.selectByPrimaryKey(Integer.valueOf(singleParts));
+    }
+
+    @Override
+    public Prime findPrimeByID(String prime) {
+        return primeMapper.selectByPrimaryKey(Integer.valueOf(prime));
+    }
+
+
 }

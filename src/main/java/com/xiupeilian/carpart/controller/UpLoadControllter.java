@@ -1,8 +1,10 @@
 package com.xiupeilian.carpart.controller;
 
 import com.xiupeilian.carpart.constant.SysConstant;
+import com.xiupeilian.carpart.service.CompanyService;
 import com.xiupeilian.carpart.service.ItemsService;
 import com.xiupeilian.carpart.util.AliyunOSSClientUtil;
+import com.xiupeilian.carpart.vo.CompanyUploadVo;
 import org.apache.commons.fileupload.disk.DiskFileItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,8 @@ import java.io.*;
 public class UpLoadControllter {
     @Autowired
     private ItemsService itemService;
+    @Autowired
+    private CompanyService companyService;
 
     @RequestMapping("/myUpload")
     public String upload(HttpServletRequest request) {
@@ -37,13 +41,27 @@ public class UpLoadControllter {
         System.err.println(AliyunOSSClientUtil.uploadObject2OSS(AliyunOSSClientUtil.getOSSClient(), f, SysConstant.BACKET_NAME, SysConstant.FOLDER));
         //String url = AliyunOSSClientUtil.uploadObject2OSS(AliyunOSSClientUtil.getOSSClient(), f, SysConstant.BACKET_NAME, SysConstant.FOLDER);
         System.out.println(AliyunOSSClientUtil.getUrl((SysConstant.FOLDER + f.getName())));
-        //System.out.println("ͼƬ�ķ��ʵ�ַ"+"https://"+SysConstant.BACKET_NAME+"."+SysConstant.ENDPOINT+"/"+SysConstant.FOLDER+f.getName());
+        //System.out.println("ͼƬ�ķ��ʵ�ַ"+"https://"+SysConstant.BACKET_NAME+"."+SysConstant.ENDPOINT+"/"+SysConstant.FOLDER+f.getName());
         String imgUrl = "https://" + SysConstant.BACKET_NAME + "." + SysConstant.ENDPOINT + "/" + SysConstant.FOLDER + f.getName();
 //        System.out.println();
 
         response.getWriter().write(imgUrl);
         System.out.println(imgUrl);
 
+    }
+
+    @RequestMapping("toCompanyUpload")
+    public String toCompanyUpload(CompanyUploadVo vo, HttpServletRequest request){
+        System.err.println(vo);
+        request.setAttribute("picture",vo.getPicture());
+        request.setAttribute("id",vo.getId());
+        return "company/index";
+    }
+    @RequestMapping("uploadCompany")
+    public void uploadCompany(CompanyUploadVo vo,HttpServletResponse response)throws  Exception{
+        System.out.println("42"+vo.getId()+vo.getPicture());
+        companyService.uploadCompanyPictureById(vo);
+        response.getWriter().write("1");
     }
 
 

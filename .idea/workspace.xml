@@ -1,42 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="GROUP_BY_SEVERITY" value="true" />
-  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="xiupeilian2:war" />
+      <artifact name="carpart:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="656c30df-65fa-4369-b2b7-db873c965587" name="Default" comment="修配连我的货架">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/CompanyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp" afterDir="false" />
+    <list default="true" id="af12a3e5-f5f3-4a88-85e3-d0f8b584ff77" name="Default Changelist" comment="修配连企业管理">
+      <change afterPath="$PROJECT_DIR$/carpart.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/vo/CompanyUploadVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/vo/PriseVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/403.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/500.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/cacheList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/close.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/closeLayer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/escape_data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/messages.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/salary_data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/taglibs.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/commons/webServiceList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/vo/CompanyUploadVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/vo/PriseVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/company/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/403.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/500.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/cacheList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/close.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/closeLayer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/escape_data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/messages.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/salary_data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/taglibs.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/carpart-1.0/commons/webServiceList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/vo/CompanyUploadVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/vo/PriseVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/xiupeilian2_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/xiupeilian2_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_2_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_all_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_guice_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20170516.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_data_redis_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xiupeilian2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/UpLoadControllter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/UpLoadControllter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PartsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PartsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/redis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/redis.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/carpart-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/controller/CompanyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/controller/CompanyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/controller/UpLoadControllter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/controller/UpLoadControllter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/CompanyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/CompanyMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/CompanyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/CompanyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/PartsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/PartsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/PrimeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/mapper/PrimeMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/CompanyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/util/AliyunOSSClientUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/com/xiupeilian/carpart/util/AliyunOSSClientUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/jdbc/redis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/jdbc/redis.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/spring/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/spring/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/classes/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/company/companyList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/carpart-1.0/WEB-INF/company/companyList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/controller/CompanyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/controller/CompanyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/controller/UpLoadControllter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/controller/UpLoadControllter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/CompanyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/CompanyMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/CompanyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/CompanyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/PartsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/PartsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/PrimeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/mapper/PrimeMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/CompanyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/util/AliyunOSSClientUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiupeilian/carpart/util/AliyunOSSClientUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/redis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc/redis.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,40 +169,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1749">
-              <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+            <state relative-caret-position="265">
+              <caret line="277" column="59" selection-start-line="277" selection-start-column="59" selection-end-line="277" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/MineController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2442">
-              <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+            <state relative-caret-position="528">
+              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -87,26 +195,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/UpLoadControllter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="231">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/company/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="957">
-              <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="231" column="5" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
+            <state relative-caret-position="528">
+              <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -114,94 +213,89 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="111" column="55" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="55" />
+            <state relative-caret-position="2277">
+              <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1749">
+              <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13200">
+              <caret line="400" selection-start-line="400" selection-end-line="400" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Jsp File" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/session/SessionInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/exception/noauth.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/StaffController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/vo/LoginVo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc/mail.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login/forgetPassword.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/task/MailTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/util/SHA1Util.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/validator/formValidatorRegex.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CityMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CityMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/BrandService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PartsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PartsMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/BrandServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/vo/RegisterVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/constant/SysConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/model/SysUser.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mail.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/model/City.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-cache.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/CityService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/Cache/RedisCache.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc/redis.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/updatePic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/MineController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/ItemsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/ItemsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/ItemsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/ItemsMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/CompanyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PartsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/BrandService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/UpLoadControllter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/company/index.jsp" />
       </list>
     </option>
-  </component>
-  <component name="JRebelWorkspace">
-    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -219,9 +313,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../Java/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="D:\Java\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="mavenHome" value="D:/TX/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\TX\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -237,6 +330,11 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="carpart" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="carpart" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -244,63 +342,19 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="293" />
-    <option name="y" value="-22" />
-    <option name="width" value="1346" />
-    <option name="height" value="478" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness</id>
-          </State>
-          <State>
-            <id>Gradle</id>
-          </State>
-          <State>
-            <id>Kotlin</id>
-          </State>
-          <State>
-            <id>Maven</id>
-          </State>
-          <State>
-            <id>OSGi</id>
-          </State>
-          <State>
-            <id>Probable bugsGradle</id>
-          </State>
-          <State>
-            <id>SetupSpring CoreSpring</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring CoreSpring</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>SpringFacetInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="94" />
+    <option name="y" value="37" />
+    <option name="width" value="1582" />
+    <option name="height" value="972" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="false" />
-      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,7 +423,75 @@
               <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xiupeilian" type="462c0819:PsiDirectoryNode" />
+              <item name="carpart" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xiupeilian" type="462c0819:PsiDirectoryNode" />
+              <item name="carpart" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xiupeilian" type="462c0819:PsiDirectoryNode" />
+              <item name="carpart" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xiupeilian" type="462c0819:PsiDirectoryNode" />
+              <item name="carpart" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
@@ -386,42 +508,55 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiupeilian2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiupeilian2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ToolWindowDocumentation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/company" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xiupeilian.carpart.vo" />
-      <recent name="com.xiupeilian.carpart.util" />
-      <recent name="com.xiupeilian.carpart.servlet" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xiupeilian2\src\main\webapp\WEB-INF" />
-      <recent name="D:\xiupeilian2\src\main\java\com\xiupeilian\carpart\controller" />
-      <recent name="D:\carpart\src\main\resources\spring" />
-      <recent name="D:\carpart\src\main\resources\jdbc" />
-      <recent name="D:\carpart\src\main\webapp\WEB-INF\login" />
+      <recent name="D:\CJJ\xiupeilian2\src\main\webapp\WEB-INF\company" />
+      <recent name="D:\CJJ\xiupeilian2\src\main\java\com\xiupeilian\carpart\vo" />
+      <recent name="D:\CJJ\xiupeilian2\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -437,50 +572,17 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat8.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 8.5.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="xiupeilian2:war">
+        <artifact name="carpart:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/xiupeilian2" />
+            <option name="CONTEXT_PATH" value="/carpart" />
           </settings>
         </artifact>
-        <file path="$PROJECT_DIR$/../pic">
-          <settings>
-            <option name="CONTEXT_PATH" value="/pic" />
-          </settings>
-        </file>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_xiupeilian2" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_xiupeilian2_2" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -488,10 +590,10 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49969" />
+        <option name="DEBUG_PORT" value="52077" />
       </RunnerSettings>
       <RunnerSettings RunnerId="JRebel Debug">
-        <option name="DEBUG_PORT" value="49970" />
+        <option name="DEBUG_PORT" value="52078" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -571,494 +673,262 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="xiupeilian2:war" />
+          <artifact name="carpart:war" />
         </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
   <component name="SpringGeneralSettings">
     <option name="allowAutoConfigurationMode" value="true" />
-    <option name="showMultipleContextsPanel" value="false" />
-    <option name="showProfilesPanel" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="656c30df-65fa-4369-b2b7-db873c965587" name="Default" comment="" />
-      <created>1566348727072</created>
+      <changelist id="af12a3e5-f5f3-4a88-85e3-d0f8b584ff77" name="Default Changelist" comment="" />
+      <created>1567422673772</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1566348727072</updated>
-      <workItem from="1566348731829" duration="10359000" />
-      <workItem from="1566368515196" duration="62000" />
-      <workItem from="1566368649736" duration="8509000" />
-      <workItem from="1566435018194" duration="684000" />
-      <workItem from="1566436655325" duration="11456000" />
-      <workItem from="1566520947617" duration="6722000" />
-      <workItem from="1566780679104" duration="10760000" />
-      <workItem from="1566795792829" duration="1951000" />
-      <workItem from="1566804327031" duration="1382000" />
-      <workItem from="1566805732814" duration="1289000" />
-      <workItem from="1566807037677" duration="2917000" />
-      <workItem from="1566866651250" duration="6284000" />
-      <workItem from="1567147105596" duration="700000" />
-      <workItem from="1567148753874" duration="752000" />
-      <workItem from="1567389134383" duration="282000" />
-      <workItem from="1567389483057" duration="569000" />
-      <workItem from="1567390917172" duration="171000" />
-      <workItem from="1567391177514" duration="5452000" />
-      <workItem from="1567404231366" duration="1253000" />
-      <workItem from="1567405576657" duration="1178000" />
+      <updated>1567422673772</updated>
+      <workItem from="1567422676090" duration="1977000" />
+      <workItem from="1567425561650" duration="262000" />
+      <workItem from="1567425892380" duration="1532000" />
+      <workItem from="1567428219939" duration="4327000" />
+      <workItem from="1567432623302" duration="3078000" />
+      <workItem from="1567488765101" duration="1093000" />
     </task>
-    <task id="LOCAL-00001" summary="修配连我的货架">
-      <created>1567392063065</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1567392063065</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72732000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="12269000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="94" y="37" width="1582" height="972" extended-state="0" />
     <layout>
-      <window_info anchor="top" x="85" y="43" width="1182" height="554" id="Documentation" order="0" type="WINDOWED" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49004975" visible="true" weight="0.17075774" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23289473" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Web" order="8" sideWeight="0.5099502" side_tool="true" weight="0.25416037" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49377915" visible="true" weight="0.2852349" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.09619687" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.06711409" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32888147" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32888147" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32888147" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50213444" side_tool="true" weight="0.5111857" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49786553" weight="0.23825504" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32888147" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="MyBatis Sql Log" order="14" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.4969743" weight="0.9010067" />
-      <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5060514" side_tool="true" weight="0.4390651" />
-      <window_info anchor="bottom" id="Tail" order="17" />
-      <window_info anchor="bottom" id="Inspection Results" order="18" sideWeight="0.4968896" weight="0.32612967" />
-      <window_info anchor="bottom" id="Problems" order="19" weight="0.32888147" />
-      <window_info anchor="bottom" id="Application Servers" order="20" />
-      <window_info anchor="bottom" id="Docker" order="21" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="22" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24919957" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.11744966" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.1935123" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Mybatis datasource" order="7" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32977587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.73373675" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32977587" />
-      <window_info anchor="right" id="JRebel Setup Guide" order="11" weight="0.32977587" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="9" visible="true" weight="0.13355263" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修配连我的货架" />
-    <option name="LAST_COMMIT_MESSAGE" value="修配连我的货架" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-    <buildFile url="file://$PROJECT_DIR$/pom.xml">
-      <expanded value="true" />
-    </buildFile>
+    <MESSAGE value="修配连企业管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="修配连企业管理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/BrandServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mine/addItems.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="208" column="76" selection-start-line="208" selection-start-column="76" selection-end-line="208" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/vo/RegisterVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/constant/SysConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/util/SHA1Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../maven-jars/org/springframework/data/spring-data-redis/2.1.3.RELEASE/spring-data-redis-2.1.3.RELEASE.pom" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/model/SysUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-443">
-          <caret line="10" column="107" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../maven-jars/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/cache/config/spring-cache.xsd" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2030">
-          <caret line="86" column="86" selection-start-line="86" selection-start-column="86" selection-end-line="86" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/session/SessionInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../maven-jars/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/Filter.java" />
-    <entry file="jar://$PROJECT_DIR$/../maven-jars/org/springframework/session/spring-session-data-redis/2.0.4.RELEASE/spring-session-data-redis-2.0.4.RELEASE.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.class" />
-    <entry file="jar://$PROJECT_DIR$/../maven-jars/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/filter/DelegatingFilterProxy.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/servlet/Kaptcha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/model/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-cache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/CityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/Cache/RedisCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="131" column="17" lean-forward="true" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4406#4407#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4482#4483#0" expanded="true" />
-            <element signature="e#4522#4523#0" expanded="true" />
-            <element signature="e#4582#4583#0" expanded="true" />
-            <element signature="e#4631#4632#0" expanded="true" />
-            <element signature="e#4867#4868#0" expanded="true" />
-            <element signature="e#4911#4912#0" expanded="true" />
-            <element signature="e#5098#5099#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/StaffController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/task/MailTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="163" column="26" lean-forward="true" selection-start-line="163" selection-start-column="26" selection-end-line="163" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/mail.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="-2473">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/redis.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="232">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mine/editItems.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index/staffList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="44" column="67" lean-forward="true" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+        <state relative-caret-position="269">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/model/Items.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commons/403.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="456">
+          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/ItemsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/MineController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/ItemsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/ItemsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7590">
-          <caret line="230" column="16" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/ItemsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="1315">
+          <caret line="125" column="5" lean-forward="true" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mine/myItems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="100" column="63" lean-forward="true" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/vo/CompanyUploadVo.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/CompanyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="467">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/company/updatePic.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PrimeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/PartsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="11" />
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+        <state relative-caret-position="-288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/vo/PriseVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
-            <element signature="e#3802#3803#0" expanded="true" />
-            <element signature="e#3829#3830#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="265">
+          <caret line="277" column="59" selection-start-line="277" selection-start-column="59" selection-end-line="277" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="396" column="11" selection-start-line="396" selection-start-column="11" selection-end-line="396" selection-end-column="11" />
+        <state relative-caret-position="528">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/SysUserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/UpLoadControllter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="213" column="11" lean-forward="true" selection-start-line="213" selection-start-column="11" selection-end-line="213" selection-end-column="11" />
+        <state relative-caret-position="231">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/company/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2277">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/CompanyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1749">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+          <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/MineController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2442">
-          <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+        <state relative-caret-position="13200">
+          <caret line="400" selection-start-line="400" selection-end-line="400" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/UpLoadControllter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/service/impl/CompanyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+        <state relative-caret-position="792">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/CompanyMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="66">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiupeilian/carpart/mapper/BrandMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="111" column="55" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/company/companyList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="231" column="5" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -1079,7 +949,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>xiupeilian2:war</last-edited>
+          <last-edited>carpart:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1092,7 +962,6 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1127,7 +996,6 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>xiupeilian2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1151,7 +1019,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.alibaba:druid:1.0.20</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,12 +1,12 @@
 package com.xiupeilian.carpart.controller;
 
+import com.aliyun.oss.OSSClient;
 import com.xiupeilian.carpart.constant.SysConstant;
 import com.xiupeilian.carpart.controller.LoginController;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.xiupeilian.carpart.model.Company;
-import com.xiupeilian.carpart.model.Notice;
-import com.xiupeilian.carpart.model.SysUser;
+import com.xiupeilian.carpart.model.*;
+import com.xiupeilian.carpart.service.BrandService;
 import com.xiupeilian.carpart.service.CompanyService;
 import com.xiupeilian.carpart.service.UserService;
 import com.xiupeilian.carpart.util.AliyunOSSClientUtil;
@@ -39,24 +39,10 @@ public class CompanyController {
     private CompanyService companyService;
     @Autowired
     private UserService userService;
+    @Autowired
+    private BrandService brandService;
 
-   /* @RequestMapping("companyList")
-    public String toCompany(Integer pageSize, Integer pageNum, HttpServletRequest request){
-
-        pageSize=pageSize==null?2:pageSize;
-        pageNum=pageNum==null?1:pageNum;
-        PageHelper.startPage(pageNum,pageSize);
-        //查询全部
-        List<Company> list=companyService.findCompany();
-        PageInfo<Company> page=new PageInfo<>(list);
-        request.setAttribute("page",page);
-
-        return "company/companyList";
-
-
-    }*/
-
-    @RequestMapping("companyList")
+    /*@RequestMapping("companyList")
     public String toCompany(HttpServletRequest request) {
 
         int userId= (int) request.getSession().getAttribute("id");
@@ -71,20 +57,46 @@ public class CompanyController {
 
         return "company/companyList";
 
-    }
-    @RequestMapping("/toUpload")
-    public void toUpload(@RequestParam("file") MultipartFile file, HttpServletResponse response) throws IOException {
-        CommonsMultipartFile cf = (CommonsMultipartFile) file;
-        DiskFileItem fi = (DiskFileItem) cf.getFileItem();
-        File f = fi.getStoreLocation();
-        System.err.println(AliyunOSSClientUtil.uploadObject2OSS(AliyunOSSClientUtil.getOSSClient(), f, SysConstant.BACKET_NAME, SysConstant.FOLDER));
-        //String url = AliyunOSSClientUtil.uploadObject2OSS(AliyunOSSClientUtil.getOSSClient(), f, SysConstant.BACKET_NAME, SysConstant.FOLDER);
-        System.out.println(AliyunOSSClientUtil.getUrl((SysConstant.FOLDER + f.getName())));
-        //System.out.println("图片的访问地址"+"https://"+SysConstant.BACKET_NAME+"."+SysConstant.ENDPOINT+"/"+SysConstant.FOLDER+f.getName());
-        String imgUrl = "https://" + SysConstant.BACKET_NAME + "." + SysConstant.ENDPOINT + "/" + SysConstant.FOLDER + f.getName();
-//        System.out.println();
+    }*/
 
-        response.getWriter().write(imgUrl);
-        System.out.println(imgUrl);
+    //展示企业信息
+    @RequestMapping("/companyList")
+    public String priseList(HttpServletRequest request){
+
+        //获取当前用户
+        SysUser user = (SysUser) request.getSession().getAttribute("user");
+        //根据当前用户中的企业ID去查询企业表
+        Company company = companyService.findCompanyId(user.getCompanyId());
+        //判断该企业售卖的产品
+        if (!(company.getMain().equals("-1"))) {//有主营的产品信息需要去数据库查询
+            //如果有数据的话只能是多种品牌
+            Brand main = brandService.finBrandById(company.getMain());
+            request.setAttribute("main",main);
+        }
+        if (!(company.getSingleBrand().equals("-1"))) {
+            //单一品牌
+            Brand brand = brandService.finBrandById(company.getSingleBrand());
+            request.setAttribute("brand",brand);
+        }
+        if (!(company.getSingleParts().equals("-1"))) {
+            //单项配件
+            Parts parts = brandService.findPartsByID(company.getSingleParts());
+            request.setAttribute("parts",parts);
+        }
+        if (!(company.getPrime().equals("-1"))) {
+            //精品专卖
+            Prime prime = brandService.findPrimeByID(company.getPrime());
+            request.setAttribute("prime",prime);
+        }
+
+        request.setAttribute("company",company);
+        return "company/companyList";
     }
-}
+
+    //修改企业宣传
+    @RequestMapping("/updatecompany")
+    public  String updateCompany(Company company){
+        companyService.updateCompany(company);
+        return "redirect:companyList";
+    }
+    }

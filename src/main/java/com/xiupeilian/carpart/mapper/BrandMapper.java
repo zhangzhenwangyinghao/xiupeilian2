@@ -8,4 +8,7 @@ import java.util.List;
 public interface BrandMapper extends BaseMapper<Brand> {
 
     List<Brand> findBrandAll();
+
+
+
 }

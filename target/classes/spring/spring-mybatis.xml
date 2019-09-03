@@ -15,7 +15,6 @@
       <property name="locations">
          <list>
             <value>classpath*:jdbc/*.properties</value>
-			 <value>classpath*:redis/redis.properties</value>
          </list>
       </property>
    </bean>

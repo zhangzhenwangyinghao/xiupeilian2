@@ -1,6 +1,7 @@
 package com.xiupeilian.carpart.service;
 
 import com.xiupeilian.carpart.model.Company;
+import com.xiupeilian.carpart.vo.CompanyUploadVo;
 
 /**
  * @Description:
@@ -10,4 +11,8 @@ import com.xiupeilian.carpart.model.Company;
  **/
 public interface CompanyService {
     Company findCompanyId(int id);
+
+    void updateCompany(Company company);
+
+    void uploadCompanyPictureById(CompanyUploadVo vo);
 }

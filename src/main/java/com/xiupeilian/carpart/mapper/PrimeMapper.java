@@ -9,4 +9,6 @@ public interface PrimeMapper extends BaseMapper<Prime> {
 
 
     List<Prime> findPrimeAll();
+
+    Prime findPrimeById(String prime);
 }
